@@ -11,18 +11,51 @@
     <main class="main-content">
       <section class="promo">
         <div class="page__centerer">
-          <img class="promo__image" alt="">
-          <div class="promo__wrapper">
-            <p class="promo__title promo-title">Декаф Флэт Уайт</p>
-            <p class="promo__text text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-            <div class="promo__buy-wrapper">
-              <p class="promo__price price">
-                <span class="price__old">295₽</span>
-                <span class="price__current">225₽</span>
-              </p>
-              <button class="promo__order primary-button">Заказать</button>
-            </div>
-          </div>
+          <h2 class="visually-hidden">Специальное предложение </h2>
+          <ol class="promo-slider">
+            <li class="promo-slider__item promo-slider__item--current">
+              <img class="promo__image" alt="">
+              <div class="promo__wrapper">
+                <p class="promo__title promo-title">Декаф Флэт Уайт</p>
+                <p class="promo__text text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+                <div class="promo__buy-wrapper">
+                  <p class="promo__price price">
+                    <span class="price__old">295₽</span>
+                    <span class="price__current">225₽</span>
+                  </p>
+                  <button class="promo__order primary-button">Заказать</button>
+                </div>
+              </div>
+            </li>
+            <li class="promo-slider__item">
+              <img class="promo__image" alt="">
+              <div class="promo__wrapper">
+                <p class="promo__title promo-title">Лавандовый Латте</p>
+                <p class="promo__text text">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+                <div class="promo__buy-wrapper">
+                  <p class="promo__price price">
+                    <span class="price__old">285₽</span>
+                    <span class="price__current">265₽</span>
+                  </p>
+                  <button class="promo__order primary-button">Заказать</button>
+                </div>
+              </div>
+            </li>
+            <li class="promo-slider__item">
+              <img class="promo__image" alt="">
+              <div class="promo__wrapper">
+                <p class="promo__title promo-title">Тройной Эспрессо</p>
+                <p class="promo__text text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+                <div class="promo__buy-wrapper">
+                  <p class="promo__price price">
+                    <span class="price__old">395₽</span>
+                    <span class="price__current">375₽</span>
+                  </p>
+                  <button class="promo__order primary-button">Заказать</button>
+                </div>
+              </div>
+            </li>
+          </ol>
           <ul class="promo__pagination pagination"></ul>
         </div>
       </section>
@@ -50,7 +83,91 @@
           </ul>
         </div>
       </section>
-      <section class="catalog"><div class="page__centerer"></div></section>
+      <section class="catalog">
+        <div class="page__centerer">
+          <h2 class="catalog__heading heading">Каталог</h2>
+          <p class="catalog__title title">Каталог кофейных напитков</p>
+          <form class="catalog__filter catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="catalog-filter__container">
+              <fieldset class="catalog-filter__fieldset price-range">
+                <legend class="catalog-filter__legend catalog-legend">Цена</legend>
+                <div class="catalog-filter__wrapper">
+
+                </div>
+              </fieldset>
+              <fieldset class="catalog-filter__fieldset additional-option">
+                <legend class="catalog-filter__legend catalog-legend">Наличие молока</legend>
+                <div class="catalog-filter__wrapper">
+                  <input class="additional-option__input input-radio" type="radio" name="additional-option" id="milk-no-matter" value="milk-no-matter" checked>
+                  <label class="additional-option__label input-radio-label" for="milk-no-matter">Неважно</label>
+                </div>
+                <div class="catalog-filter__wrapper">
+                  <input class="additional-option__input input-radio" type="radio" name="additional-option" id="milk-animal" value="milk-animal">
+                  <label class="additional-option__label input-radio-label" for="milk-animal">Только животное</label>
+                </div>
+                <div class="catalog-filter__wrapper">
+                  <input class="additional-option__input input-radio" type="radio" name="additional-option" id="milk-plant" value="milk-plant">
+                  <label class="additional-option__label input-radio-label" for="milk-plant">Только растительное</label>
+                </div>
+                <div class="catalog-filter__wrapper">
+                  <input class="additional-option__input input-radio" type="radio" name="additional-option" id="milk-none" value="milk-none" disabled>
+                  <label class="additional-option__label input-radio-label" for="milk-none">Без молока</label>
+                </div>
+              </fieldset>
+              <fieldset class="catalog-filter__fieldset countries">
+                <legend class="catalog-filter__legend catalog-legend">Страна произрастания</legend>
+                <ul class="countries__list">
+                  <li class="catalog-filter__wrapper countries__item">
+                    <input class="countries__input input-checkbox" type="checkbox" name="countries" id="countries-brazil" value="countries-brazil" checked>
+                    <label class="countries__label input-checkbox-label" for="countries-brazil">Бразилия</label>
+                  </li>
+                  <li class="catalog-filter__wrapper countries__item">
+                    <input class="countries__input input-checkbox" type="checkbox" name="countries" id="countries-ethiopia" value="countries-ethiopia">
+                    <label class="countries__label input-checkbox-label" for="countries-ethiopia">Эфиопия</label>
+                  </li>
+                  <li class="catalog-filter__wrapper countries__item">
+                    <input class="countries__input input-checkbox" type="checkbox" name="countries" id="countries-colombia" value="countries-colombia">
+                    <label class="countries__label input-checkbox-label" for="countries-colombia">Колумбия</label>
+                  </li>
+                  <li class="catalog-filter__wrapper countries__item">
+                    <input class="countries__input input-checkbox" type="checkbox" name="countries" id="countries-costa-rica" value="countries-costa-rica">
+                    <label class="countries__label input-checkbox-label" for="countries-costa-rica">Коста-Рика</label>
+                  </li>
+                  <li class="catalog-filter__wrapper countries__item">
+                    <input class="countries__input input-checkbox" type="checkbox" name="countries" id="countries-peru" value="countries-peru" disabled>
+                    <label class="countries__label input-checkbox-label" for="countries-peru">Перу</label>
+                  </li>
+                </ul>
+              </fieldset>
+            <div class="catalog-filter__buttons-wrapper">
+              <button class="catalog-filter__button button-primary" type="submit">Применить</button>
+              <button class="catalog-filter__button button-primary--light" type="reset">Сбросить</button>
+            </div>
+          </form>
+        </div>
+        <div class="catalog__sort catalog-sort">
+          <p class="catalog-sort__title catalog-legend">Сортировка:</p>
+          <select class="catalog-sort__select" name="catalog-sort" aria-label="Сортировка">
+            <option value="default">по умолчанию</option>
+            <option value="price-high">сначала дорогие</option>
+            <option value="price-low">сначала дешёвые</option>
+            <option value="popular">высокий рейтинг</option>
+          </select>
+        </div>
+        <ul class="catalog__products products">
+          <li class="products__item product-card">
+            <a class="product-card__link" href="">
+              <picture class="product-card__image"></picture>
+              <p class="product-card__title">Декаф Флэт Уайт</p>
+            </a>
+            <p class="product-card__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+            <div class="product-card__wrapper">
+              <p class="product-card__price">225₽</p>
+              <button class="product-card__button button-primary button-primary--cart">В корзину</button>
+            </div>
+          </li>
+        </ul>
+      </section>
       <section class="map"><div class="page__centerer"></div></section>
     </main>
     <footer class="footer">днище</footer>
