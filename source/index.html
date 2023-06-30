@@ -7,7 +7,20 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="header">Шапка</header>
+    <header class="header">
+      <div class="header__logo-wrapper">
+        <picture></picture>
+        <p class="header__title">Интернет-магазин кофейных напитков</p>
+      </div>
+      <nav class="header__navigation navigation">
+        <ul class="navigation__site-list site-list">
+          <li class="site-list__item"><a class="site-list__link" href=""></a></li>
+        </ul>
+        <ul class="navigation__user-menu user-menu">
+          <li class="user-menu__item"><a class="user-menu__link" href=""></a></li>
+        </ul>
+      </nav>
+    </header>
     <main class="main-content">
       <section class="promo">
         <div class="page__centerer">
@@ -167,10 +180,49 @@
             </div>
           </li>
         </ul>
+        <ul class="catalog__pagination catalog-pagination">
+          <li class="catalog-pagination__item">
+            <a class="catalog-pagination__link" href="">Назад</a>
+          </li>
+          <li class="catalog-pagination__item">
+            <a class="catalog-pagination__link" href="">1</a>
+          </li>
+          <li class="catalog-pagination__item">
+            <a class="catalog-pagination__link" href="">2</a>
+          </li>
+          <li class="catalog-pagination__item">
+            <a class="catalog-pagination__link" href="">3</a>
+          </li>
+          <li class="catalog-pagination__item">
+            <a class="catalog-pagination__link" href="">Вперед</a>
+          </li>
+        </ul>
       </section>
-      <section class="map"><div class="page__centerer"></div></section>
+      <section class="map">
+        <div class="page__centerer">
+          <h2 class="visually-hidden">Местоположение компании на карте</h2>
+          <picture></picture>
+        </div>
+      </section>
     </main>
-    <footer class="footer">днище</footer>
+    <footer class="footer">
+      <div class="page__centerer">
+        <div class="footer__socials-wrapper">
+          <picture></picture>
+          <ul class="socials">
+            <li class="socials__item"><a class="socials__link" href=""></a></li>
+          </ul>
+        </div>
+        <div class="footer__info-wrapper">
+          <ul class="shop"></ul>
+          <ul class="media"></ul>
+          <ul class="contacts"></ul>
+        </div>
+        <div class="footer__developers-wrapper">
+          <p class="developer-title"></p>
+        </div>
+      </div>
+    </footer>
     <script src="./js/script.js" defer></script>
   </body>
 </html>
