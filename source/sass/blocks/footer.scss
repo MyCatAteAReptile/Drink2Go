@@ -1,11 +1,21 @@
 .footer {
 
-    &__socials-wrapper {
+    &__socials-container {
     }
 
     &__info-wrapper {
+        
     }
 
-    &__developers-wrapper {
+    &__info-container {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @media #{$not-mobile} {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    &__developers-container {
     }
 }

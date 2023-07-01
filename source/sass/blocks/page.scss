@@ -1,6 +1,9 @@
 .page {
-
 		&__body {
+			margin: 0;
+			min-height: 100vh;
+			display: grid;
+			grid-template-rows: auto 1fr auto;
 		}
 
 		&__header {
@@ -10,6 +13,24 @@
 		}
 
 		&__centerer {
+			--indent-min: 20;
+			--indent-max: 40; //было 30
+			--vp-min: 320;
+			--vp-max: 768;
+		
+			--increment-indent: calc(var(--indent-max) - var(--indent-min));
+			--increment-vp: calc(var(--vp-max) - var(--vp-min));
+			--content-indent: calc(var(--indent-min) * 1px + var(--increment-indent) * (100vw - var(--vp-min) * 1px) / var(--increment-vp));
+			margin-inline: var(--content-indent);
+		
+			@media #{$not-mobile} {
+				--content-indent: calc(var(--indent-max) * 1px);
+			}
+		
+			@media #{$desktop-only} {
+				--content-indent: auto;
+				width: 1220px;
+			}
 		}
 
 		&__footer {

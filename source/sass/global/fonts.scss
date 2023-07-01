@@ -1,1 +1,30 @@
 /* здесь подключите шрифты*/
+@font-face {
+	font-family: "Monserrat";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src:
+		url("../../fonts/monserrat-regular.woff2") format("woff2"),
+		url("../../fonts/monserrat-regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Monserrat";
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src:
+		url("../../fonts/monserrat-medium.woff2") format("woff2"),
+		url("../../fonts/monserrat-medium.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Monserrat";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src:
+		url("../../fonts/monserrat-bold.woff2") format("woff2"),
+		url("../../fonts/monserrat-bold.woff") format("woff");
+}

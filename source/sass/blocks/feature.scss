@@ -1,6 +1,19 @@
 .feature {
 
     &__title {
+        &::before {
+            position: relative;
+            display: block;
+            content: "";
+            width: 52px;
+            height: 56px;
+            //background: url("../../icons/stack.svg#black-arrow-to-right") no-repeat left -8px center / contain;
+            background-color: blue;
+    
+            @media #{$not-mobile} {
+                margin-left: 27px;
+            }
+        }
     }
 
     &__text {

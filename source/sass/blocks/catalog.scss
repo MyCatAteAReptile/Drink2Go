@@ -1,4 +1,16 @@
 .catalog {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @media #{$desktop-only} {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &__products-wrapper {
+        
+    }
 
     &__heading {
     }
