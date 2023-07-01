@@ -1,2 +1,14 @@
 .title {
+    color: #333333;
+
+    font-size: 24px;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+
+    @media #{$not-mobile} {
+        font-size: 42px;
+        line-height: 64px;
+    }
 }

@@ -7,11 +7,24 @@
             content: "";
             width: 52px;
             height: 56px;
-            //background: url("../../icons/stack.svg#black-arrow-to-right") no-repeat left -8px center / contain;
-            background-color: blue;
-    
-            @media #{$not-mobile} {
-                margin-left: 27px;
+            background: url("/img/icons/stack.svg#watch") no-repeat center / contain;
+        }
+
+        &--second {
+            &::before {
+                background: url("/img/icons/stack.svg#pocket") no-repeat center / contain;
+            }
+        }
+
+        &--third {
+            &::before {
+                background: url("/img/icons/stack.svg#lightning") no-repeat center / contain;
+            }
+        }
+
+        &--fourth {
+            &::before {
+                background: url("/img/icons/stack.svg#leaf") no-repeat center / contain;
             }
         }
     }
