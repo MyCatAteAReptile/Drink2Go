@@ -1,8 +1,14 @@
 .catalog-sort {
+    display: flex;
+    justify-content: space-between;
 
     &__title {
+        margin: 0;
+        padding: 0;
     }
 
     &__select {
+        width: 165px;
+        height: 32;
     }
 }

@@ -1,20 +1,29 @@
 .catalog-filter {
-
-    &__container {
-    }
+    display: grid;
+    row-gap: 31px;
 
     &__fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
     }
 
     &__legend {
+        margin-bottom: 20px;
     }
 
-    &__wrapper {
-    }
+    // &__wrapper {
+    //     display: flex;
+    //     gap: 10px;
+    // }
 
     &__buttons-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
     &__button {
+        width: 280px;
     }
 }

@@ -1,8 +1,54 @@
 .user-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+
+    @media #{$not-mobile} {
+        padding: 0;
+    }
+
+    @media #{$desktop-only} {
+        justify-content: space-around;
+        gap: 20px;
+    }
 
     &__item {
     }
 
     &__link {
+        display: flex;
+        padding: 10px 0;
+
+        &::before {
+            position: relative;
+            display: block;
+            content: "";
+            width: 16px;
+            height: 16px;
+            background: url("/img/icons/stack.svg#user") no-repeat center / contain;
+
+            @media #{$not-mobile} {
+                padding: 0 20px;
+            }
+
+            @media #{$desktop-only} {
+                padding: 0 8px;
+            }
+        }
+
+        &--basket {
+            &::before {
+                background: url("/img/icons/stack.svg#basket") no-repeat center / contain;
+            }
+        }
+    }
+
+    &__link-text {
+        display: none;
+
+        @media #{$desktop-only} {
+            display: block;
+        }
     }
 }

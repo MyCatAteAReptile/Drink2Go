@@ -1,5 +1,10 @@
 .main-content {
 
     &__section {
+        margin-bottom: 60px;
+
+        @media #{$not-mobile} {
+            margin-bottom: 100px;
+        }
     }
 }

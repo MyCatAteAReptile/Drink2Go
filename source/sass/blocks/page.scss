@@ -14,7 +14,7 @@
 
 		&__centerer {
 			--indent-min: 20;
-			--indent-max: 40; //было 30
+			--indent-max: 20; //было 30
 			--vp-min: 320;
 			--vp-max: 768;
 		
@@ -29,7 +29,7 @@
 		
 			@media #{$desktop-only} {
 				--content-indent: auto;
-				width: 1220px;
+				width: 1360px;
 			}
 		}
 

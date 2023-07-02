@@ -1,4 +1,7 @@
 .catalog {
+    background-color: #F8F8F8;
+    padding: 50px 0 44px 0;
+
     &__wrapper {
         display: grid;
         grid-template-columns: 1fr;
@@ -13,12 +16,17 @@
     }
 
     &__heading {
+        text-align: center;
+        margin-bottom: 4px;
     }
 
     &__title {
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     &__filter {
+        margin-left: 3px;
     }
 
     &__sort {

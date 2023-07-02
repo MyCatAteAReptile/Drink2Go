@@ -6,6 +6,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
+    margin: 0;
 
     @media #{$not-mobile} {
         font-size: 16px;

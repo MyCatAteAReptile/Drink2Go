@@ -1,2 +1,41 @@
 .input-radio {
+    margin: 0;
+	padding: 0;
+	width: 24px;
+	height: 24px;
+	appearance: none;
+	display: grid;
+    grid-template-columns: 24px;
+	place-content: center;
+    outline: none;
+
+    &::before {
+		content: "";
+		width: 24px;
+		height: 24px;
+		background: url("/img/icons/stack.svg#radio") center center / contain no-repeat;
+
+		@media #{$not-mobile} {
+			// width: 40px;
+			// height: 40px;
+		}
+    }
+
+    &:hover::before {
+		background: url("/img/icons/stack.svg#radio-hover") center center / contain no-repeat;
+	}
+
+    &:checked::before {
+		background: url("/img/icons/stack.svg#radio-checked") center center / contain no-repeat;
+	}
+
+    &:disabled {
+        &::before {
+            background: url("/img/icons/stack.svg#radio-disabled") center center / contain no-repeat;
+        }
+    }
+       
+    &:disabled:checked::before {
+		background: url("/img/icons/stack.svg#radio-disabled-checked") center center / contain no-repeat;
+	}
 }

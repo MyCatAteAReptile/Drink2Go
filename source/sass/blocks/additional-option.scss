@@ -1,4 +1,17 @@
 .additional-option {
+    padding: 0;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
 
     &__input {
     }

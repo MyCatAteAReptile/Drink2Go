@@ -1,2 +1,75 @@
 .price-range {
+
+    &__slider {
+        margin-bottom: 24px;
+
+        &:after {
+            position: relative;
+            display: block;
+            content: "";
+            width: 280px;
+            height: 24px;
+            background: url("/img/icons/stack.svg#range") no-repeat center / contain;
+        }
+    }
+
+    &__inputs {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 8px;
+            height: 2px;
+            background-color:#BDBDBD;
+            top: 50%;
+            left: calc(50% - 4px);
+        }
+    }
+
+    &__input {
+        box-sizing: border-box;
+        width: 118px;
+        height: 40px;
+        width: 118px;
+        padding: 8px 10px;
+        border-radius: 4px;
+        border: 2px solid #9070EC;
+        background-color: #FFFFFF;
+        text-align: center;
+        outline: none;
+
+        color: #333333;
+        font-size: 16px;
+        font-family: var(--main-font);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+
+        &::placeholder {
+            color: #BDBDBD;
+        }
+
+        &:focus {
+            border: 2px solid #593CAC;
+        }
+
+        &:disabled {
+            border: 2px solid #E2E2E2;
+            color: #BDBDBD;
+        }
+
+        &[type="number"] {
+            appearance: textfield;
+    
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                appearance: none;
+                margin: 0;
+            }
+        }
+    }
 }

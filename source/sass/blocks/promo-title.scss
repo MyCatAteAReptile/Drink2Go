@@ -1,2 +1,16 @@
 .promo-title {
+    color: #333333;
+
+    font-size: 36px;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.72px;
+
+    @media #{$not-mobile} {
+        font-size: 56px;
+        line-height: 80px;
+        letter-spacing: 1.12px;
+    }
 }
