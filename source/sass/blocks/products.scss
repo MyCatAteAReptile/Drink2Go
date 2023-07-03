@@ -1,14 +1,17 @@
 .products {
     display: grid;
     grid-template-columns: 1fr;
+    row-gap: 20px;
 
     @media #{$not-mobile} {
         grid-template-columns: 1fr 1fr;
-    }    
-    
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+
     @media #{$desktop-only} {
         grid-template-columns: 1fr 1fr 1fr;
-    }     
+    }
 
     &__item {
     }

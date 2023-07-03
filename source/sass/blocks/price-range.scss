@@ -3,6 +3,10 @@
     &__slider {
         margin-bottom: 24px;
 
+        @media #{$not-mobile} {
+            margin-bottom: 20px;
+        }
+
         &:after {
             position: relative;
             display: block;
@@ -10,6 +14,16 @@
             width: 280px;
             height: 24px;
             background: url("/img/icons/stack.svg#range") no-repeat center / contain;
+
+            @media #{$not-mobile} {
+                width: 223px;
+                background: url("/img/icons/stack.svg#range-tablet") no-repeat center / contain;
+            }
+
+            @media #{$not-mobile} {
+                width: 318px;
+                background: url("/img/icons/stack.svg#range-desktop") no-repeat center / contain;
+            }
         }
     }
 
@@ -34,7 +48,6 @@
         box-sizing: border-box;
         width: 118px;
         height: 40px;
-        width: 118px;
         padding: 8px 10px;
         border-radius: 4px;
         border: 2px solid #9070EC;
@@ -48,6 +61,16 @@
         font-style: normal;
         font-weight: 500;
         line-height: 24px;
+
+        @media #{$not-mobile} {
+            display: flex;
+            width: 87px;
+        }
+
+        @media #{$desktop-only} {
+            display: flex;
+            width: 134px;
+        }
 
         &::placeholder {
             color: #BDBDBD;
@@ -64,7 +87,6 @@
 
         &[type="number"] {
             appearance: textfield;
-    
             &::-webkit-outer-spin-button,
             &::-webkit-inner-spin-button {
                 appearance: none;

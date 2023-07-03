@@ -3,15 +3,15 @@
     grid-template-columns: 1fr;
     row-gap: 32px;
 
-	@media #{$not-mobile} {
-		grid-template-columns: 1fr 1fr;
+    @media #{$not-mobile} {
+        grid-template-columns: 340px 340px;
         row-gap: 50px;
-        column-gap: 20px;
-	}
+        column-gap: 30px;
+  }
 
     @media #{$desktop-only} {
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-	}
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 
     &__item {
     }

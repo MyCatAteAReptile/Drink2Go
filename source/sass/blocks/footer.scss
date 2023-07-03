@@ -1,10 +1,84 @@
 .footer {
 
+    @media #{$not-mobile} {
+        padding-top: 20px;
+    }
+
+    @media #{$desktop-only} {
+        padding-bottom: 30px;
+    }
+
+    &__container {
+
+        @media #{$desktop-only} {
+            display: grid;
+            grid-template-columns: 318px 1fr;
+            column-gap: 30px;
+        }
+    }
+
+    &__logo-wrapper {
+
+        @media #{$desktop-only} {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__logo {
+        padding: 22px 0;
+
+        @media #{$desktop-only} {
+            padding-bottom: 5px;
+        }
+    }
+
+    &__title {
+        display: none;
+
+        @media #{$desktop-only} {
+          display: block;
+          color: #333333;
+          font-size: 14px;
+          font-family: var(--main-font);
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+
+          margin: 0;
+        }
+      }
+
     &__socials-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media #{$desktop-only} {
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 318px;
+            justify-content: unset;
+        }
     }
 
     &__info-wrapper {
-        
+        padding: 20px 20px;
+        margin-left: -20px;
+        width: 100%;
+
+        @media #{$mobile-only} {
+            outline: 1px solid #F0EBFF;
+            outline-offset: 0.5px;
+        }
+
+        @media #{$not-mobile} {
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+        &--last {
+            padding-bottom: 10px;
+        }
     }
 
     &__info-container {
@@ -13,9 +87,22 @@
 
         @media #{$not-mobile} {
             grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 30px;
+        }
+
+        @media #{$desktop-only} {
+            grid-template-columns: 317px 318px 317px;
+            column-gap: 30px;
+            width: 1052px;
+            margin-top: 23px;
         }
     }
 
     &__developers-container {
+        grid-column: 1 / -1;
     }
+}
+
+.footer__heading.footer__heading {
+    margin-bottom: 12px;
 }

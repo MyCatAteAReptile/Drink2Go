@@ -23,9 +23,6 @@
     }
 
     &__user-menu {
-        // @media #{$desktop-only} {
-        //     margin-left: 0px;
-        // }
     }
 
     &__toggle {
@@ -50,28 +47,27 @@
 }
 
 .navigation--closed .site-list__item {
-	@media #{$mobile-only} {
-		display: none;
-	}
+    @media #{$mobile-only} {
+        display: none;
+    }
 }
 
 .navigation--closed .navigation__toggle::before {
-	content: "";
-	display: block;
-	width: 16px;
-	height: 16px;
-	background: url("/img/icons/stack.svg#burger") no-repeat center / contain;
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("/img/icons/stack.svg#burger") no-repeat center / contain;
 }
 
 .navigation--nojs.header__navigation {
-	position: static;
+    position: static;
 }
 
 .navigation--nojs .site-list__item {
-	display: block;
+    display: block;
 }
 
 .navigation--nojs .navigation__toggle {
-	display: none;
+    display: none;
 }
-

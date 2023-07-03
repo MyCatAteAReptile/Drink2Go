@@ -1,2 +1,8 @@
 .contacts {
+    display: grid;
+
+    &__item {
+        display: block;
+        padding: 8px 0;
+    }
 }

@@ -1,8 +1,33 @@
 .socials {
+    display: flex;
+    gap: 20px;
 
     &__item {
     }
 
     &__link {
+        display: flex;
+        padding: 10px;
+
+        &::before {
+            position: relative;
+            display: block;
+            content: "";
+            width: 20px;
+            height: 20px;
+            background: url("/img/icons/stack.svg#socials-vk-grey") no-repeat center / contain;
+        }
+
+        &--pinterest {
+            &::before {
+                background: url("/img/icons/stack.svg#socials-pinterest-grey") no-repeat center / contain;
+            }
+        }
+
+        &--ok {
+            &::before {
+                background: url("/img/icons/stack.svg#socials-ok-grey") no-repeat center / contain;
+            }
+        }
     }
 }

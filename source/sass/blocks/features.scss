@@ -1,9 +1,14 @@
 .features {
 
-    &__list {
+    @media #{$desktop-only} {
+        padding-bottom: 20px;
+    }
 
+    &__list {
         @media #{$tablet-only} {
-            margin-left: 10px;
+            max-width: 710px;
+            margin-left: auto;
+            margin-right: auto
         }
     }
 }
