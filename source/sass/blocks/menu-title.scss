@@ -11,5 +11,7 @@
 }
 
 .site-list__item--current .menu-title {
-    color:#7859CF;
+    @media #{$not-mobile} {
+        color:#7859CF;
+    }
 }

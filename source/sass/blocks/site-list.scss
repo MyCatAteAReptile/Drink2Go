@@ -44,3 +44,22 @@
             white-space: nowrap;
         }
 }
+
+.site-list__item {
+    &:hover .site-list__link {
+        color: #7859CF;
+    }
+
+    &:focus .site-list__link {
+        color: #7859CF;
+    }
+
+    &:active {
+        background-color: #F0EBFF;
+    }
+
+    &:active .site-list__link {
+        color: #7859CF;
+        background-color: #F0EBFF;
+    }
+}
