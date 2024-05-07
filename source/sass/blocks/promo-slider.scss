@@ -1,8 +1,11 @@
 .promo-slider {
 
     &__item {
+        display: none;
+        text-align: center;
     }
 
     &__item--current {
+        display: block;
     }
 }

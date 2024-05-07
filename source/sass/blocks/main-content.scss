@@ -1,5 +1,17 @@
 .main-content {
 
     &__section {
+        margin-bottom: 60px;
+
+        @media #{$not-mobile} {
+            margin-bottom: 100px;
+        }
+    }
+
+    &__section.catalog {
+        margin-bottom: 0;
+    }
+
+    &__section-map {
     }
 }

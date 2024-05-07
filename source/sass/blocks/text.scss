@@ -1,2 +1,20 @@
 .text {
+    color: #333333;
+
+    font-size: 14px;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
+
+    @media #{$not-mobile} {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &--stable {
+        font-size: 14px;
+        line-height: 20px;
+    }
 }

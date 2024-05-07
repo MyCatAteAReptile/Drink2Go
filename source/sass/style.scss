@@ -3,17 +3,22 @@
 @import "./global/global";
 @import "./global/fonts";
 @import "./global/media";
+@import "./global/normalize";
 
 /* BLOCKS */
+@import "./blocks/default-list.scss";
+@import "./blocks/default-button.scss";
+@import "./blocks/menu-title.scss";
+@import "./blocks/company-contacts.scss";
+@import "./blocks/price-text.scss";
 @import "./blocks/features.scss";
 @import "./blocks/features-list.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/header.scss";
 @import "./blocks/heading.scss";
 @import "./blocks/input-checkbox.scss";
-@import "./blocks/input-checkbox-label.scss";
+@import "./blocks/input-label.scss";
 @import "./blocks/input-radio.scss";
-@import "./blocks/input-radio-label.scss";
 @import "./blocks/main-content.scss";
 @import "./blocks/map.scss";
 @import "./blocks/media.scss";

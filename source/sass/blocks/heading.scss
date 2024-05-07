@@ -1,2 +1,19 @@
 .heading {
+    color: #7859CF;
+
+    font-size: 12px;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    margin: 0;
+
+    &--bigger {
+        text-transform: none;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.28px;
+    }
 }

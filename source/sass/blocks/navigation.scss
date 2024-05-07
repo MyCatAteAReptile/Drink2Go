@@ -1,8 +1,73 @@
 .navigation {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    @media #{$not-mobile} {
+        grid-template-columns: 1fr 120px;
+        gap: 60px;
+    }
+
+    @media #{$desktop-only} {
+        grid-template-columns: 1fr 268px;
+        gap: 60px;
+    }
 
     &__site-list {
+        position: absolute;
+        top: 60px;
+        left: 0;
+
+        @media #{$not-mobile} {
+            position: unset;
+        }
     }
 
     &__user-menu {
     }
+
+    &__toggle {
+        justify-self: end;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 16px;
+            height: 16px;
+            background: url("/img/icons/stack.svg#cross") no-repeat center / contain;
+        }
+
+        @media #{$not-mobile} {
+            display: none;
+        }
+    }
+}
+
+.navigation--closed .navigation__site-list {
+    border: none;
+}
+
+.navigation--closed .site-list__item {
+    @media #{$mobile-only} {
+        display: none;
+    }
+}
+
+.navigation--closed .navigation__toggle::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("/img/icons/stack.svg#burger") no-repeat center / contain;
+}
+
+.navigation--nojs.header__navigation {
+    position: static;
+}
+
+.navigation--nojs .site-list__item {
+    display: block;
+}
+
+.navigation--nojs .navigation__toggle {
+    display: none;
 }
